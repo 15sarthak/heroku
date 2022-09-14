@@ -1,7 +1,4 @@
 from flask import Flask,request
-from firebase_admin import credentials,initialize_app
-cred = credentials.Certificate('key.json')
-default_app = initialize_app(cred)
 app = Flask(__name__)
 
 @app.route("/")
